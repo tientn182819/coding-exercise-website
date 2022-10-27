@@ -1,0 +1,231 @@
+body {
+    background-color: black;
+    font-family: "Lato", sans-serif;
+    margin: 0px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    color: white;
+}
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 38px;
+    background-color: #020305;
+}
+
+.left-side {
+    display: flex;
+}
+
+.nav-wrapper>.left-side>div {
+    margin-right: 20px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+.nav-link-wrapper {
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+    cursor: pointer;
+}
+
+.active-nav-link {
+    border-bottom: 1px solid white;
+}
+
+.active-nav-link a {
+    color: white !important;
+}
+
+.nav-link-wrapper a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.nav-link-wrapper:hover {
+    border-bottom: 1px solid white;
+}
+
+.nav-link-wrapper a:hover {
+    color: white;
+}
+
+.portfolio-items-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.portfolio-item-wrapper {
+    position: relative;
+}
+
+.portfolio-img-background {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 350px;
+    width: 100%;
+}
+
+.img-text-wrapper {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.img-text-wrapper .subtitle {
+    transition: 1s;
+    color: transparent;
+}
+
+.image-blur {
+    transition: 1s;
+    filter: brightness(10%);
+}
+
+.img-text-wrapper:hover .subtitle {
+    color: white;
+    font-weight: 600;
+}
+
+.logo-wrapper img {
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.two-column-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.profile-image-wrapper img {
+    width: 100%;
+}
+
+.profile-content-wrapper {
+    padding: 30px;
+    color: white;
+}
+
+.profile-content-wrapper h1 {
+    color: white;
+}
+
+.footer {
+    text-align: center!important;
+    font-size: 12px!important;
+    opacity: 0.60;
+    box-sizing: inherit;
+    display: block;
+    padding: 50px 100px;
+    color: white;
+    background-color: #020305;
+}
+
+
+/* CSS for helloworld.html */
+
+
+/* * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+    html {
+        font-size: 62.5;
+        background-color: black;
+    }
+     */
+
+.editor-menu {
+    width: 100%;
+    height: 6rem;
+    background-color: black;
+    display: flex;
+    justify-self: flex-start;
+    align-items: center;
+    padding: 5p;
+}
+
+.btn {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #1d1d16;
+    padding: 8px 25px 8px 25px;
+    border-radius: 5px;
+    font-size: 1.6rem;
+    margin: 15px 25px 8px;
+    color: white;
+    min-width: 5rem;
+    transition: all .3s;
+    font-size: 25px;
+}
+
+.btn:hover {
+    background-color: white;
+    color: black;
+}
+
+.hlw-container {
+    position: absolute;
+    bottom: 0;
+    top: 7rem;
+    width: 100%;
+    display: flex;
+    background-color: black;
+}
+
+.hlw-leftside,
+.hlw-rightside {
+    height: 100%;
+    width: 50%;
+    border: 1px solid #d5d5d5;
+}
+
+.hlw-bar {
+    width: 4px;
+    height: 100%;
+    background-color: #eee;
+    cursor: w-resize;
+}
+
+.hlw-rightside {
+    flex: 1;
+}
+
+.hlw-editor {
+    width: 100%;
+    font-family: inherit;
+    height: 100%;
+    font-size: 1.6rem;
+    outline: none;
+    padding: 1rem 0 0 1rem;
+    border-color: #ccc;
+    background-color: black;
+    color: white;
+}
+
+.hlw-iframe {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    overflow-y: auto;
+    white-space: pre;
+    right: 0;
+    padding: 4px;
+}
